@@ -3,7 +3,6 @@ import { IoHeart } from "react-icons/io5";
 import { PageShell } from "./PageShell";
 
 // Import QR image
-import donateQR from "../assets/qr/donate-qr.png";
 
 export const DonatePage: React.FC<{ onBack: () => void }> = ({ onBack }) => (
   <PageShell title="Support whatsView" onBack={onBack}>
@@ -29,7 +28,7 @@ export const DonatePage: React.FC<{ onBack: () => void }> = ({ onBack }) => (
 
       <div className="w-56 h-56 bg-white rounded-xl p-3 flex items-center justify-center shadow-md">
         <img
-          src={donateQR}
+          src="../assets/qr/donate-qr.png"
           alt="Donation QR Code"
           className="w-full h-full object-contain rounded-lg"
         />
